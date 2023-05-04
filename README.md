@@ -1,19 +1,15 @@
-[![CircleCI](https://circleci.com/gh/ros-drivers/velodyne/tree/dashing-devel.svg?style=svg)](https://circleci.com/gh/ros-drivers/velodyne/tree/dashing-devel)
-
 Overview
 ========
 
-Velodyne<sup>1</sup> is a collection of ROS<sup>2</sup> packages supporting `Velodyne high
-definition 3D LIDARs`<sup>3</sup>.
+Run the Velodyne driver:
+```
+ros2 launch velodyne_driver velodyne_driver_node-VLP32C-launch.py
+```
 
-**Warning**:
-
-  The `<ros_distro>-devel` branch normally contains code being tested for the next
-  ROS release.  It will not always work with every previous release.
-  To check out the source for the most recent release, check out the
-  tag `ros2-<version>` with the highest version number.
-
-The current ``dashing-devel`` branch works with ROS Dashing.
+Run the Velodyne point cloud conversion node:
+```
+ros2 launch velodyne_pointcloud velodyne_convert_node-VLP32C-launch.py
+```
 
 - <sup>1</sup>Velodyne: http://www.ros.org/wiki/velodyne
 - <sup>2</sup>ROS: http://www.ros.org
